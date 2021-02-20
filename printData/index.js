@@ -1,5 +1,6 @@
+import axios from "axios";
+
 module.exports = (req, res) => {
-    import axios from "axios";
 
     console.log("Received Key: " + keyVal[1]);
     console.log("Received Value: " + keyVal[2]);
