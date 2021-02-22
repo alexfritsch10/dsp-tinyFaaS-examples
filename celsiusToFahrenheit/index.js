@@ -1,13 +1,13 @@
 module.exports = (req, res) => { 
  
-    let keyVal = req.url.split("/"); // -> ["", "celsius1", "15,8", ""]
-    let key = keyVal[1];
-    let value = keyVal[2];
+    const keyVal = req.url.split("/"); // -> ["", "celsius1", "15,8", ""]
+    const key = keyVal[1];
+    const value = keyVal[2];
 
-    let celsius = parseFloat(value);
-    let fahrenheit = (celsius * 9/5) + 32;
+    const celsius = parseFloat(value);
+    const fahrenheit = (celsius * 9/5) + 32;
 
-    let data = {
+    const data = {
         "keygroup": "fahrenheit",
         "key": key,
         "value": fahrenheit
