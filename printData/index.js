@@ -8,7 +8,7 @@ module.exports = (req, res) => {
     console.log("Received Value: " + keyVal[2]);
 
     let data = {
-        "keygroup": "reponseData",
+        "keygroup": "responseData",
         "key": keyVal[1],
         "value": keyVal[2]
     }
