@@ -5,12 +5,12 @@ module.exports = (req, res) => {
     const value = keyVal[2];
 
     const celsius = parseFloat(value);
-    const fahrenheit = (celsius * 9/5) + 32;
+    const fahrenheit = Math.round((celsius * 9/5) + 32);
 
     const data = {
         "keygroup": "fahrenheit",
         "key": key,
-        "value": fahrenheit
+        "value": fahrenheit.toString()
     };
 
     res.send(data);
