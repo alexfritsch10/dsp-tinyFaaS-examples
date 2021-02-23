@@ -8,7 +8,7 @@ module.exports = (req, res) => {
     const fahrenheit = ((celsius * 9/5) + 32).toFixed(2);
 
     const data = {
-        "keygroup": "fahrenheit",
+        "keygroup": "Fahrenheit",
         "key": key,
         "value": fahrenheit.toString()
     };
