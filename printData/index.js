@@ -1,6 +1,5 @@
 module.exports = (req, res) => { 
     
-
     //console.log(req);
     
     let keyVal = req.url.split("/"); // -> ["", "testKey", "testValue", ""]
