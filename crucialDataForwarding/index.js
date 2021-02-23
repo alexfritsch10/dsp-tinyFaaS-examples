@@ -21,7 +21,7 @@ module.exports = (req, res) => {
         })
         .catch((err) => {
             data.value = err;
-        })
+        });
     }
 
     res.send(data);
