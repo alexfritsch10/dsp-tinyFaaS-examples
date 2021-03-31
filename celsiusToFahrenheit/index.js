@@ -1,6 +1,6 @@
 module.exports = (req, res) => { 
  
-    const keyVal = req.url.split("/"); // -> ["", "celsius1", "15,8", ""]
+    const keyVal = req.url.split("/"); // -> ["", "celsius1", "15.8", ""]
     const key = keyVal[1];
     const value = keyVal[2];
 
